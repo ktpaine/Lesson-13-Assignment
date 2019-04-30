@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: black;
+	background-color: silver;
+}
+p {
+	padding-bottom: 5px;
+}
+header {
+	padding: 150px 10% 50px;
+	background:url("newimages/shells.jpeg") center no-repeat; background-size:cover;
+	background-color: silver;
+	height: 40em;
+}
+
+
+h1 {
+	font-family: "Indie Flower", cursive;
+	font-size: 10em;
+	color: dimgray;
+	line-height: 1em;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Indie Flower", cursive;
+	font-size: 5em;
+	line-height: 1em;
+	text-align: center;
+	color: lemonchiffon;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+	line-height: 1em;
+	text-align: center;
+	color: dimgrey;
+}
+nav {
+	padding: 10px 0;
+	background-color: silver;
+	position: relative;
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	
+}
+nav ul a {
+	padding: 10px;
+	background-color: silver;
+	text-decoration: none;
+	font-family: "Indie Flower", cursive;
+	font-size: 24pt;
+	color: lemonchiffon;
+}
+
+section#paintinggallery {
+background-color: silver;
+		 column-count: 3;
+	column-gap: 2em;
+	margin: 0 auto;
+	font-family: 
+}
+
+section#photographygallery {
+background-color: silver;	
+		 column-count: 3;
+	column-gap: 2em;
+	margin: 0 auto;
+}
+
+section#aboutme {
+	font-family: "Indie Flower", cursive;
+	background-color: silver;
+	column-count: 2;
+	column-gap: 1.5em;
+}
+
+section#home {
+	font-family: "Indie Flower", cursive;
+	font-size: 5em;
+	background-color: silver;
+}
+
+section#headshot {
+	align-content: right;
+	width: 150px auto;
+	height: 150px auto;
+
+}
+
+aside#socialmediaimages {
+	align-items: center;
+	background-color: silver;
+	width: 150px;
+	height: 150px;
+	column-count: 2;
+}
+
+p { font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+		color: dimgrey;
+	padding: 20px 20px 20px 20px;
+	line-height: 1.5;
+	}
+
+#contactme .portfolio {
+	background-color: silver; 
+	
+}
+
+#paintings .portfolio {
+	background-color: silver;
+}
+
+#photographs .portfolio {
+	background-color: silver;
+}
+
+#aboutme .portfolio {
+	background-color: silver;
+}
+
+form {
+	background-color: white;
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 500px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: dimgray;
+  text-decoration:underline;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid pink;
+  border: inset 1px solid pink;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input {
+  width: 300px;
+  display: block;
+  border: 1px solid pink;
+  height: 25px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input#name {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+}
+
+textarea#feedback {
+  width: 300px;
+  height: 150px;
+  display: block;
+}
+
+button {
+  width: 100px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background:#0E6A00;
+  color: dimgray;
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: medium solid pink;
+}
+
+input.button:hover {
+  background-color: dimgrey;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid pink;
+}
+
+h4 {
+	text-size: 4em;
+	font-family: "Indie Flower", cursive;
+	color: dimgray;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+footer {
+padding: 50px 10%;
+text-align: center;
+background-color: silver;
+}
+
+@media only screen and (max-width:600px) { 
+	img {max-width: 600px;}
+	h1 {line-height: 2.5em;}
+	h2 {line-height: 1.5em;}
+	h3 {line-height: 1em;}
+	h4 {line-height: .5em;}
+	nav {line-height: 7em;}
+	nav ul a {padding: 30px 30px 30px 30px;}
+	p {line-height: 2.5em; column-count: 1;}
+	section#paintinggallery {line-height: 2.5em; column-count: 1;}
+	section#photographygallery {line-height: 2.5em; column-count: 1;}
+	section#aboutme {line-height: 2.5em; column-count: 1;}
+	
+}
+
+@media print {
+	header, nav, footer {display: none}
+	img {max-width: 500px}
+	@page {margin: 0.5cm}
+	body {font: 12pt Georgia, "Times New Roman", Times, serif;
+	line-height: 1.3;}
+	h1 {font-size: 24pt;}
+	h2 {font-size: 14pt;}
+	h3 {font-size: 10pt;
+	margin-top: 25pt}
+	h4 {font-size: 8pt;}
+}
